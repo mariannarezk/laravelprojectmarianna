@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+
+.create-task-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.create-task-form .form-group {
+    margin-bottom: 20px;
+}
+
+.create-task-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create-task-form input[type="text"],
+.create-task-form input[type="date"],
+.create-task-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.create-task-form .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-task-form .btn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
