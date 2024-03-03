@@ -19,7 +19,7 @@ class TaskController extends Controller
         if ($request->input('search')) {
             $searchQuery = $request->input('search');
             $tasks->where(function($query) use ($searchQuery) {
-                $query->where('title', 'like', '%' . $searchQuery . '%')
+                $query->where('tasks.title', 'like', '%' . $searchQuery . '%')
                       ->orWhere('Description', 'like', '%' . $searchQuery . '%');
             });
         }
